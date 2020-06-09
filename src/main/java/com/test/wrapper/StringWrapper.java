@@ -28,7 +28,6 @@ public class StringWrapper {
         this.maxLength = Integer.parseInt(config.getProperty(ConfigConstants.MAX_STRING_WRAPPER_LIMIT));
         InputFactory inputFactory = InputFactory.getInstance();
         inChannel = inputFactory.getInputAgent(config);
-
         OutputFactory outputFactory = OutputFactory.getInstance();
         outChannel = outputFactory.getOutputAgent(config);
     }
